@@ -94,7 +94,7 @@ h1 {
   color: var(--black);
 }
 
-.lght {
+.light {
   color: var(--white);
 }
 
@@ -115,6 +115,10 @@ h1 {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+section {
+  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .section__title {
@@ -147,6 +151,7 @@ button.action {
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
 }
+
 button.action:hover {
   background-color: var(--accent-hover-color);
   cursor: pointer;
@@ -281,7 +286,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: var(--large-padding) var(--extra-large-padding);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -309,7 +313,6 @@ footer {
 .large__card {
   display: flex;
   align-items: center;
-  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .card__info {
@@ -335,7 +338,6 @@ footer {
   font-family: var(--headline-5-large__screen-font-family);
   font-weight: var(--headline-5-large__screen-font-weight);
   font-size: var(--headline-5-large__screen-font-size);
-  color: var(--black);
 }
 
 .card__description {
@@ -351,7 +353,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--medium-gap);
-  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .services__content {
@@ -422,7 +423,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--medium-gap);
-  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .traning__types__content {
@@ -477,7 +477,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--medium-gap);
-  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .levels__content {
@@ -511,7 +510,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--medium-gap);
-  padding: var(--large-padding) var(--extra-large-padding);
   align-items: center;
 }
 
@@ -537,7 +535,6 @@ footer {
 .gallery {
   display: flex;
   gap: var(--medium-gap);
-  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .gallery__top,
@@ -563,11 +560,31 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: var(--medium-gap);
-  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .filosofi .card__description {
   padding: 0px var(--extra-large-padding);
+}
+
+.our__values {
+  display: flex;
+  flex-direction: column;
+  gap: var(--medium-gap);
+}
+
+.values__container {
+  display: flex;
+  gap: var(--small-gap);
+  width: 100%;
+  justify-content: space-between;
+}
+
+.values__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-gap);
+  padding: var(--medium-padding);
+  background-color: var(--secondary-color);
 }
 
 /*______________________media queries____________________*/
