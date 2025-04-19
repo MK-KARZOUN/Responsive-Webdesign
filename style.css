@@ -52,6 +52,19 @@
   --text-small__screen-font-family: "Helvetica";
   --text-small__screen-font-weight: "Regular";
   --text-small__screen-font-size: 15px;
+
+  --image-width: 450px;
+  --image-height: 418px;
+
+  --extra-large-padding: 150px;
+  --large-padding: 100px;
+  --medium-padding: 40px;
+  --small-padding: 20px;
+
+  --large-gap: var(--large-padding);
+  --medium-gap: 40px;
+  --small-gap: 20px;
+  --extra-small-gap: 10px;
 }
 
 * {
@@ -80,13 +93,19 @@ h1 {
 .lght {
   color: var(--white);
 }
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
 .image__container {
   position: relative;
-  height: 418px;
-  max-width: 450px;
-  min-width: 450px;
+  height: var(--image-height);
+  max-width: var(--image-width);
+  min-width: var(--image-width);
   overflow-y: hidden;
 }
+
 .section__title {
   font-family: var(--headline-2-large__screen-font-family);
   font-weight: var(--headline-2-large__screen-font-weight);
@@ -105,7 +124,7 @@ h1 {
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 20px;
+  gap: var(--small-gap);
 }
 
 .card__reverse {
@@ -113,7 +132,6 @@ h1 {
 }
 
 .card img {
-  /* Or whatever consistent height works for your layout */
   width: 100%;
   object-fit: contain;
   object-position: center;
@@ -128,7 +146,7 @@ header {
   right: 0;
   display: flex;
   justify-content: center;
-  padding: 20px 150px;
+  padding: 20px var(--extra-large-padding);
   background-color: white;
   z-index: 1000;
   width: 100%;
@@ -137,7 +155,7 @@ header {
 .navigation__container {
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  gap: var(--large-gap);
 }
 
 .navigation__container a {
@@ -153,33 +171,34 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: start;
-  padding: 70px 150px 100px 150px;
+  padding: 70px var(--extra-large-padding) var(--large-padding)
+    var(--extra-large-padding);
   border-top: 1px solid var(--black);
 }
 
 .social__media {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--medium-gap);
   margin-top: 40px;
 }
 
 .icon__container {
   display: flex;
-  gap: 20px;
+  gap: var(--small-gap);
 }
 
 .menu {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--medium-gap);
   margin-top: 40px;
 }
 
 .menu__container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--extra-small-gap);
 }
 
 .menu__container a {
@@ -192,14 +211,14 @@ footer {
 .contact__us {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--medium-gap);
   margin-top: 40px;
 }
 
 .contact__info {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--extra-small-gap);
 }
 
 .email__address {
@@ -230,7 +249,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 150px;
+  padding: 20px var(--extra-large-padding);
   background-color: #1b2439;
 }
 
@@ -247,30 +266,27 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  padding: 100px 150px;
+  padding: var(--large-padding) var(--extra-large-padding);
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*_____________________Forside_____________________*/
 
 /*pilates*/
 
-.pilates {
-  background-color: var(--primary-color);
-}
-
 .large__card {
   display: flex;
   align-items: center;
-  padding: 100px 150px;
+  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .card__info {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--medium-gap);
 }
 
 .card__title {
@@ -283,7 +299,7 @@ footer {
 .card__content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--small-gap);
 }
 
 .card__headline {
@@ -305,22 +321,22 @@ footer {
 .services {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 100px 150px;
+  gap: var(--medium-gap);
+  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .services__content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--small-gap);
 }
 
 .services__cards__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items: stretch;
 }
 
 .service__card__header {
@@ -343,32 +359,21 @@ footer {
 
 .services__cards__container {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: var(--medium-gap);
 }
 
 .services__card {
   display: flex;
   flex-direction: column;
-
-  gap: 20px;
-  padding: 40px;
+  gap: var(--small-gap);
+  padding: var(--medium-padding);
   background-color: var(--primary-color);
-  border: 1px solid var(--black);
-  width: 100%;
+  min-width: calc(var(--image-width) + 2 * var(--medium-padding));
+  max-width: calc(var(--image-width) + 2 * var(--medium-padding));
   flex: 1;
-}
-
-.services__img__container {
-  position: relative;
-}
-
-.services__img__container img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  object-position: center;
 }
 
 .service__card__button {
@@ -396,8 +401,8 @@ footer {
 .traning__types {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 100px 150px;
+  gap: var(--medium-gap);
+  padding: var(--large-padding) var(--extra-large-padding);
   background-color: var(--primary-color);
 }
 
@@ -405,7 +410,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--small-gap);
 }
 
 .traning__types__description {
@@ -418,7 +423,7 @@ footer {
 .traning__cards__container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--medium-gap);
 }
 
 .medium__card {
@@ -451,26 +456,26 @@ footer {
 .levels {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 100px 150px;
+  gap: var(--medium-gap);
+  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .levels__content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--small-gap);
 }
 
 .levels__cards__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  gap: var(--medium-gap);
 }
 
 .level__card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--medium-gap);
   padding: 20px;
   background-color: var(--primary-color);
 }
@@ -485,8 +490,8 @@ footer {
 .hold__træning {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding: 100px 150px;
+  gap: var(--medium-gap);
+  padding: var(--large-padding) var(--extra-large-padding);
   align-items: center;
 }
 
@@ -515,15 +520,15 @@ footer {
 /*gallery*/
 .gallery {
   display: flex;
-  gap: 40px;
-  padding: 100px 150px;
+  gap: var(--medium-gap);
+  padding: var(--large-padding) var(--extra-large-padding);
 }
 
 .gallery__top,
 .gallery__bottom {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--medium-gap);
   flex: 1;
 }
 
