@@ -80,7 +80,13 @@ h1 {
 .lght {
   color: var(--white);
 }
-
+.image__container {
+  position: relative;
+  height: 418px;
+  max-width: 450px;
+  min-width: 450px;
+  overflow-y: hidden;
+}
 .section__title {
   font-family: var(--headline-2-large__screen-font-family);
   font-weight: var(--headline-2-large__screen-font-weight);
@@ -107,10 +113,9 @@ h1 {
 }
 
 .card img {
+  /* Or whatever consistent height works for your layout */
   width: 100%;
-  width: 350px; /* Or any fixed width you want */
-  height: 500px; /* Or whatever consistent height works for your layout */
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
