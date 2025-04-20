@@ -102,6 +102,9 @@ h1 {
 .bg__primary {
   background-color: var(--primary-color);
 }
+.non__visible {
+  visibility: hidden;
+}
 
 .image__container {
   position: relative;
