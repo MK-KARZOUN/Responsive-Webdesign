@@ -362,9 +362,6 @@ footer {
 }
 
 .menu__container a {
-  /* font-family: var(--headline-5-large__screen-font-family);
-  font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--black);
 }
 
@@ -382,16 +379,10 @@ footer {
 }
 
 .email__address {
-  /* font-family: var(--headline-5-large__screen-font-family);
-  font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--black);
 }
 
 .phone__number {
-  /* font-family: var(--headline-5-large__screen-font-family);
-  font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--black);
   text-decoration: underline;
 }
@@ -414,9 +405,6 @@ footer {
 }
 
 .copy__right__text {
-  /* font-family: var(--headline-5-large__screen-font-family);
-  font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--white);
 }
 
@@ -626,9 +614,6 @@ input[type="radio"] {
   right: 0;
   z-index: 10;
   padding: 12px 24px;
-  /* font-family: var(--headline-5-large__screen-font-family);
-  font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -685,9 +670,6 @@ input[type="radio"] {
 
 .trainer__card__button a {
   color: var(--white);
-  /* font-family: var(--headline-5-large__screen-font-family);
-  font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size); */
 }
 
 /*______________________trainingoffer____________________*/
@@ -765,8 +747,8 @@ input[type="radio"] {
 
 .gallery img {
   width: 100%;
-  max-width: 500px; /* Or any fixed width you want */
-  height: 300px; /* Or whatever consistent height works for your layout */
+  max-width: 500px;
+  height: 300px;
   object-fit: cover;
   object-position: center;
 }
