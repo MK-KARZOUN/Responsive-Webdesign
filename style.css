@@ -698,6 +698,7 @@ input[type="radio"] {
 .values__card,
 .achivments__card {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   gap: var(--small-gap);
@@ -705,8 +706,14 @@ input[type="radio"] {
   background-color: var(--secondary-color);
 }
 
+.studio ul {
+  padding-left: 8px;
+}
 .studio li {
   list-style: disc;
+}
+.studio video {
+  border-radius: 8px;
 }
 
 /*______________________media queries____________________*/
