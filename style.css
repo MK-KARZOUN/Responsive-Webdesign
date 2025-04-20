@@ -63,6 +63,7 @@
   --large-padding: 100px;
   --medium-padding: 40px;
   --small-padding: 20px;
+  --extra-small-padding: 10px;
 
   --large-gap: 100px;
   --medium-gap: 40px;
@@ -375,6 +376,85 @@ footer {
   font-weight: var(--text-large__screen-font-weight);
   font-size: var(--text-large__screen-font-size);
   color: var(--black);
+}
+
+.feedback {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background-color: var(--primary-color);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.reviews {
+  max-width: 1030px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.review {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.review-container {
+  display: flex;
+  text-align: left;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.arrow {
+  cursor: pointer;
+  padding: 0 20px;
+  font-size: 4rem;
+  text-shadow: 0px 4px 4px gray;
+  user-select: none;
+  top: 50%;
+}
+
+.arrow-left {
+  left: -40px;
+}
+
+.arrow-right {
+  right: -40px;
+}
+
+.review .paragraph {
+  padding: var(--medium-padding);
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+.review .author {
+  padding: var(--extra-small-padding);
+  text-align: right;
+}
+
+/* Show correct review based on checked radio */
+#fb1:checked ~ .reviews .slider {
+  transform: translateX(0);
+}
+#fb2:checked ~ .reviews .slider {
+  transform: translateX(-1030px);
+}
+#fb3:checked ~ .reviews .slider {
+  transform: translateX(-2060px);
+}
+#fb4:checked ~ .reviews .slider {
+  transform: translateX(-3090px);
 }
 
 /*services*/
