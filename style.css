@@ -35,27 +35,32 @@
   /*******************/
 
   --headline-1-small__screen-font-family: "Avenir";
-  --headline-1-small__screen-font-weight: "Heavy";
+  --headline-1-small__screen-font-weight: bold;
   --headline-1-small__screen-font-size: 32px;
 
   --headline-2-small__screen-font-family: "Futura";
-  --headline-2-small__screen-font-weight: "Medium";
+  --headline-2-small__screen-font-weight: 500;
   --headline-2-small__screen-font-size: 32px;
 
   --headline-3-small__screen-font-family: "Avenir";
-  --headline-3-small__screen-font-weight: "Light";
+  --headline-3-small__screen-font-weight: Light;
   --headline-3-small__screen-font-size: 24px;
 
   --headline-4-small__screen-font-family: "Helvetica";
-  --headline-4-small__screen-font-weight: "Bold";
+  --headline-4-small__screen-font-weight: Bold;
   --headline-4-small__screen-font-size: 18px;
 
+  --headline-5-small__screen-font-family: "Helvetica";
+  --headline-5-small__screen-font-weight: Bold;
+  --headline-5-small__screen-font-size: 15px;
+
   --text-small__screen-font-family: "Helvetica";
-  --text-small__screen-font-weight: "Regular";
+  --text-small__screen-font-weight: Regular;
   --text-small__screen-font-size: 15px;
 
   --large-image-width: 450px;
   --large-image-height: 418px;
+
   --small-image-width: 373px;
   --small-image-height: 300px;
 
@@ -91,6 +96,11 @@ h1 {
   color: var(--white);
 }
 
+video,
+button {
+  border-radius: 8px;
+}
+
 .dark {
   color: var(--black);
 }
@@ -102,6 +112,7 @@ h1 {
 .bg__primary {
   background-color: var(--primary-color);
 }
+
 .non__visible {
   visibility: hidden;
 }
@@ -112,6 +123,7 @@ h1 {
   max-width: var(--large-image-width);
   min-width: var(--large-image-width);
   overflow-y: hidden;
+  border-radius: 8px;
 }
 
 .image__container img {
@@ -183,9 +195,9 @@ header {
 }
 
 .navigation__container a {
-  font-family: var(--headline-5-large__screen-font-family);
+  /* font-family: var(--headline-5-large__screen-font-family);
   font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size);
+  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--secondary-color);
 }
 
@@ -256,9 +268,9 @@ footer {
 }
 
 .menu__container a {
-  font-family: var(--headline-5-large__screen-font-family);
+  /* font-family: var(--headline-5-large__screen-font-family);
   font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size);
+  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--black);
 }
 
@@ -276,16 +288,16 @@ footer {
 }
 
 .email__address {
-  font-family: var(--headline-5-large__screen-font-family);
+  /* font-family: var(--headline-5-large__screen-font-family);
   font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size);
+  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--black);
 }
 
 .phone__number {
-  font-family: var(--headline-5-large__screen-font-family);
+  /* font-family: var(--headline-5-large__screen-font-family);
   font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size);
+  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--black);
   text-decoration: underline;
 }
@@ -308,9 +320,9 @@ footer {
 }
 
 .copy__right__text {
-  font-family: var(--headline-5-large__screen-font-family);
+  /* font-family: var(--headline-5-large__screen-font-family);
   font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size);
+  font-size: var(--headline-5-large__screen-font-size); */
   color: var(--white);
 }
 
@@ -343,11 +355,6 @@ footer {
 /*_____________________Forside_____________________*/
 
 /*pilates*/
-
-.large__card {
-  display: flex;
-  align-items: center;
-}
 
 .card__info {
   display: flex;
@@ -412,7 +419,7 @@ input[type="radio"] {
   position: relative;
 }
 
-.review-container {
+.review__container {
   display: flex;
   text-align: left;
   font-size: 1.2rem;
@@ -428,11 +435,11 @@ input[type="radio"] {
   top: 50%;
 }
 
-.arrow-left {
+.arrow__left {
   left: -40px;
 }
 
-.arrow-right {
+.arrow__right {
   right: -40px;
 }
 
@@ -440,6 +447,7 @@ input[type="radio"] {
   padding: var(--medium-padding);
   background-color: var(--secondary-color);
   color: var(--white);
+  border-radius: 8px;
 }
 .review .author {
   padding: var(--extra-small-padding);
@@ -518,9 +526,9 @@ input[type="radio"] {
   right: 0;
   z-index: 10;
   padding: 12px 24px;
-  font-family: var(--headline-5-large__screen-font-family);
+  /* font-family: var(--headline-5-large__screen-font-family);
   font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size);
+  font-size: var(--headline-5-large__screen-font-size); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -577,9 +585,9 @@ input[type="radio"] {
 
 .trainer__card__button a {
   color: var(--white);
-  font-family: var(--headline-5-large__screen-font-family);
+  /* font-family: var(--headline-5-large__screen-font-family);
   font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size);
+  font-size: var(--headline-5-large__screen-font-size); */
 }
 
 /*______________________trainingoffer____________________*/
@@ -618,16 +626,16 @@ input[type="radio"] {
 
 /* personlig__træning */
 
-.personlig__træning,
-.hold__træning {
+.personal__training,
+.group__training {
   display: flex;
   flex-direction: column;
   gap: var(--medium-gap);
   align-items: center;
 }
 
-.personlig__træning__button,
-.hold__træning__button {
+.personal__training__button,
+.group__training__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -636,12 +644,9 @@ input[type="radio"] {
   width: fit-content;
 }
 
-.personlig__træning__button a,
-.hold__træning__button a {
+.personal__training__button a,
+.group__training__button a {
   color: var(--white);
-  font-family: var(--headline-5-large__screen-font-family);
-  font-weight: var(--headline-5-large__screen-font-weight);
-  font-size: var(--headline-5-large__screen-font-size);
 }
 
 /*gallery*/
@@ -700,14 +705,17 @@ input[type="radio"] {
   display: flex;
   flex: 1;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   gap: var(--small-gap);
   padding: var(--medium-padding);
   background-color: var(--secondary-color);
+  border-radius: 8px;
 }
 
 .studio ul {
-  padding-left: 8px;
+  padding-left: 15px;
 }
 .studio li {
   list-style: disc;
@@ -719,4 +727,140 @@ input[type="radio"] {
 /*______________________media queries____________________*/
 
 @media screen and (max-width: 425px) {
+  h1 {
+    font-family: var(--headline-1-small__screen-font-family);
+    font-weight: var(--headline-1-small__screen-font-weight);
+    font-size: var(--headline-1-small__screen-font-size);
+  }
+
+  .hero__section {
+    text-align: center;
+  }
+
+  .hero__section p {
+    font-family: var(--headline-3-small__screen-font-family);
+    font-weight: var(--headline-3-small__screen-font-weight);
+    font-size: var(--headline-3-small__screen-font-size);
+  }
+
+  header {
+    visibility: hidden;
+  }
+
+  button a {
+    font-family: var(--headline-5-small__screen-font-family);
+    font-weight: var(--headline-5-small__screen-font-weight);
+    font-size: var(--headline-5-small__screen-font-size);
+  }
+
+  section {
+    padding: var(--medium-padding) var(--small-padding);
+  }
+
+  .section__title {
+    font-family: var(--headline-2-small__screen-font-family);
+    font-weight: var(--headline-2-small__screen-font-weight);
+    font-size: var(--headline-2-small__screen-font-size);
+  }
+
+  .image__container {
+    height: var(--small-image-height);
+    max-width: calc(100vw - 2 * var(--small-padding));
+    min-width: calc(100vw - 2 * var(--small-padding));
+  }
+
+  .card {
+    flex-direction: column;
+    gap: var(--small-gap);
+  }
+
+  .card__info {
+    gap: var(--small-gap);
+  }
+
+  .card__content {
+    gap: var(--extra-small-gap);
+  }
+
+  .card__title {
+    font-family: var(--headline-3-small__screen-font-family);
+    font-weight: var(--headline-3-small__screen-font-weight);
+    font-size: var(--headline-3-small__screen-font-size);
+  }
+
+  .card__headline {
+    font-family: var(--headline-5-small__screen-font-family);
+    font-weight: var(--headline-5-small__screen-font-weight);
+    font-size: var(--headline-5-small__screen-font-size);
+  }
+
+  .card__description {
+    font-family: var(--text-small__screen-font-family);
+    font-weight: var(--text-small__screen-font-weight);
+    font-size: var(--text-small__screen-font-size);
+  }
+
+  /* services */
+
+  .services__card {
+    min-width: calc(var(--small-image-width) + 2 * var(--small-padding));
+    max-width: calc(var(--small-image-width) + 2 * var(--small-padding));
+  }
+
+  .medium__card {
+    padding: var(--extra-small-padding);
+  }
+
+  /* footer */
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--medium-gap);
+    padding: var(--medium-padding) var(--small-padding);
+  }
+
+  .footer__headline {
+    font-family: var(--headline-4-small__screen-font-family);
+    font-weight: var(--headline-4-small__screen-font-weight);
+    font-size: var(--headline-4-small__screen-font-size);
+  }
+
+  .social__media,
+  .menu,
+  .contact__us {
+    margin: 0;
+    gap: var(--small-gap);
+  }
+
+  /* copy right */
+
+  .copy__right {
+    padding: var(--small-padding) var(--small-padding);
+  }
+
+  .copy__right__text {
+    font-family: var(--text-small__screen-font-family);
+    font-weight: var(--text-small__screen-font-weight);
+    font-size: var(--text-small__screen-font-size);
+  }
+
+  /*______________________traningoffer____________________*/
+
+  .group__training__button,
+  .personal__training__button {
+    padding: 12px 24px;
+  }
+
+  /*______________________om____________________*/
+
+  .filosofi .card__description {
+    padding: 0px;
+  }
+
+  .values__container,
+  .achivments__container {
+    flex-wrap: wrap;
+  }
 }
