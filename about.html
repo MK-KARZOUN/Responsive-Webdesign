@@ -8,15 +8,57 @@
   </head>
   <body>
     <header>
-      <header>
-        <ul class="navigation__container">
+      <input
+        type="radio"
+        id="menu-toggle-on"
+        class="menu__toggle"
+        name="menu-burger"
+      />
+
+      <input
+        type="radio"
+        id="menu-toggle-off"
+        class="menu__toggle"
+        name="menu-burger"
+        checked
+      />
+
+      <label for="menu-toggle-on" class="menu__burger">
+        <div class="menu__burger__container">
+          <div class="menu__burger__line__top"></div>
+          <div class="menu__burger__line__mid"></div>
+          <div class="menu__burger__line__bottom"></div>
+        </div>
+      </label>
+
+      <div class="menu__burger__overlay">
+        <ul class="menu__burger__navigation">
+          <label for="menu-toggle-off" class="menu__burger">
+            <div class="menu__burger__container">
+              <div class="menu__burger__line__top"></div>
+              <div class="menu__burger__line__mid"></div>
+              <div class="menu__burger__line__bottom"></div>
+            </div>
+          </label>
           <li><a href="./index.html">Forside</a></li>
           <li><a href="./trainingoffer.html">Træningstilbud</a></li>
-          <li><a href="./prises-register.html">Priser & Tilmedling</a></li>
+          <li><a href="./prises-register.html">Priser</a></li>
           <li><a href="./contact.html">Kontakt</a></li>
           <li class="active"><a href="./about.html">Om</a></li>
         </ul>
-      </header>
+      </div>
+
+      <ul class="navigation__container">
+        <li><a href="./index.html">Forside</a></li>
+        <li>
+          <a href="./trainingoffer.html">Træningstilbud</a>
+        </li>
+        <li>
+          <a href="./prises-register.html">Priser</a>
+        </li>
+        <li><a href="./contact.html">Kontakt</a></li>
+        <li class="active"><a href="./about.html">Om</a></li>
+      </ul>
     </header>
     <main>
       <section
@@ -176,7 +218,7 @@
         <ul class="menu__container">
           <li><a href="./index.html">Forside</a></li>
           <li><a href="./trainingoffer.html">Træningstilbud</a></li>
-          <li><a href="./prises-register.html">Priser & Tilmelding</a></li>
+          <li><a href="./prises-register.html">Priser</a></li>
           <li><a href="./contact.html">Kontakt</a></li>
           <li><a href="./about.html">Om</a></li>
         </ul>
