@@ -426,7 +426,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 100vh;
+  height: 100dvh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -495,8 +495,7 @@ input[type="radio"] {
 }
 
 .reviews {
-  max-width: 1030px;
-  margin: auto;
+  max-width: min(1030px, 100dvw);
   overflow: hidden;
 }
 .slider {
@@ -553,13 +552,13 @@ input[type="radio"] {
   transform: translateX(0);
 }
 #fb2:checked ~ .reviews .slider {
-  transform: translateX(-1030px);
+  transform: translateX(-100%);
 }
 #fb3:checked ~ .reviews .slider {
-  transform: translateX(-2060px);
+  transform: translateX(-200%);
 }
 #fb4:checked ~ .reviews .slider {
-  transform: translateX(-3090px);
+  transform: translateX(-300%);
 }
 
 /*services*/
@@ -877,8 +876,8 @@ input[type="radio"] {
 
   .image__container {
     height: var(--small-image-height);
-    max-width: calc(100vw - 2 * var(--small-padding));
-    min-width: min(calc(100vw - 2 * var(--small-padding)), 100%);
+    max-width: calc(100dvw - 2 * var(--small-padding));
+    min-width: min(calc(100dvw - 2 * var(--small-padding)), 100%);
   }
 
   .card {
