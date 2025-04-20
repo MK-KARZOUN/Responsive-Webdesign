@@ -5,7 +5,8 @@
   --accent-hover-color: rgb(193, 70, 61);
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
-
+  --shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  --shadow-image: -1px 3px 4px 0px rgba(0, 0, 0, 0.2);
   /*******************/
 
   --headline-1-large__screen-font-family: "Avenir";
@@ -124,6 +125,7 @@ button {
   min-width: var(--large-image-width);
   overflow-y: hidden;
   border-radius: 8px;
+  box-shadow: var(--shadow-image);
 }
 
 .image__container img {
@@ -488,6 +490,8 @@ input[type="radio"] {
   justify-content: center;
   flex-wrap: wrap;
   align-items: stretch;
+  row-gap: var(--small-gap);
+  column-gap: var(--medium-gap);
 }
 
 .services__card {
@@ -499,6 +503,11 @@ input[type="radio"] {
   min-width: calc(var(--large-image-width) + 2 * var(--small-padding));
   max-width: calc(var(--large-image-width) + 2 * var(--small-padding));
   flex: 1;
+  box-shadow: var(--shadow);
+}
+
+.services__card .image__container {
+  box-shadow: none;
 }
 
 .service__card__header {
@@ -766,7 +775,7 @@ input[type="radio"] {
   .image__container {
     height: var(--small-image-height);
     max-width: calc(100vw - 2 * var(--small-padding));
-    min-width: calc(100vw - 2 * var(--small-padding));
+    min-width: min(calc(100vw - 2 * var(--small-padding)), 100%);
   }
 
   .card {
@@ -803,8 +812,11 @@ input[type="radio"] {
   /* services */
 
   .services__card {
-    min-width: calc(var(--small-image-width) + 2 * var(--small-padding));
-    max-width: calc(var(--small-image-width) + 2 * var(--small-padding));
+    min-width: min(
+      calc(var(--small-image-width) + 2 * var(--extra-small-padding)),
+      100%
+    );
+    max-width: calc(var(--small-image-width) + 2 * var(--extra-small-padding));
   }
 
   .medium__card {
