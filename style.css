@@ -235,15 +235,6 @@ header {
 
 /*menu burger*/
 
-/* <input type="checkbox" id="menu-toggle" class="menu__toggle" hidden />
-<label for="menu-toggle" class="menu__burger">
-  <div class="menu__burger__container">
-    <div class="menu__burger__line__top"></div>
-    <div class="menu__burger__line__mid"></div>
-    <div class="menu__burger__line__bottom"></div>
-  </div>
-</label> */
-
 .menu__burger {
   display: none;
   position: fixed;
@@ -314,10 +305,12 @@ header {
   rotate: -45deg;
 }
 
-#menu__toggle:checked ~ .menu__burger__overlay {
+#menu-toggle-on:checked ~ .menu__burger__overlay {
   display: flex;
 }
-
+#menu-toggle-off:checked ~ .menu__burger__overlay {
+  display: none;
+}
 /*footer*/
 
 footer {

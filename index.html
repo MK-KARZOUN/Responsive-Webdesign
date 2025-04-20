@@ -10,11 +10,17 @@
     <header>
       <input
         type="radio"
-        id="menu-toggle"
+        id="menu-toggle-on"
         class="menu__toggle"
         name="menu-burger"
       />
-      <label for="menu-toggle" class="menu__burger">
+      <input
+        type="radio"
+        id="menu-toggle-off"
+        class="menu__toggle"
+        name="menu-burger"
+      />
+      <label for="menu-toggle-on" class="menu__burger">
         <div class="menu__burger__container">
           <div class="menu__burger__line__top"></div>
           <div class="menu__burger__line__mid"></div>
@@ -22,11 +28,20 @@
         </div>
       </label>
       <div class="menu__burger__overlay">
-        <li class="active"><a href="./index.html">Forside</a></li>
-        <li><a href="./trainingoffer.html">Træningstilbud</a></li>
-        <li><a href="./prises-register.html">Priser & Tilmedling</a></li>
-        <li><a href="./contact.html">Kontakt</a></li>
-        <li><a href="./about.html">Om</a></li>
+        <label for="menu-toggle-off" class="menu__burger">
+          <div class="menu__burger__container">
+            <div class="menu__burger__line__top"></div>
+            <div class="menu__burger__line__mid"></div>
+            <div class="menu__burger__line__bottom"></div>
+          </div>
+        </label>
+        <ul>
+          <li class="active"><a href="./index.html">Forside</a></li>
+          <li><a href="./trainingoffer.html">Træningstilbud</a></li>
+          <li><a href="./prises-register.html">Priser & Tilmedling</a></li>
+          <li><a href="./contact.html">Kontakt</a></li>
+          <li><a href="./about.html">Om</a></li>
+        </ul>
       </div>
 
       <ul class="navigation__container">
