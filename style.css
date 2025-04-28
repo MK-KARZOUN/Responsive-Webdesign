@@ -199,6 +199,9 @@ header {
 .navigation__container a,
 .menu__burger__navigation a {
   color: var(--secondary-color);
+  font-family: var(--headline-5-large__screen-font-family);
+  font-weight: var(--headline-5-large__screen-font-weight);
+  font-size: var(--headline-5-large__screen-font-size);
 }
 
 .navigation__container li,
