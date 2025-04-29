@@ -491,6 +491,7 @@ input[type="radio"] {
 .reviews {
   max-width: min(1030px, 100dvw);
   overflow: hidden;
+  margin: 0 auto;
 }
 .slider {
   display: flex;
@@ -911,6 +912,12 @@ input[type="radio"] {
 
   .medium__card {
     padding: var(--extra-small-padding);
+  }
+
+  /* feedback  */
+
+  .reviews {
+    margin: 0;
   }
 
   /* footer */
