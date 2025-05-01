@@ -771,6 +771,7 @@ input[type="radio"] {
 
 .filosofi .card__description {
   padding: 0px var(--extra-large-padding);
+  text-align: center;
 }
 
 .our__values,
